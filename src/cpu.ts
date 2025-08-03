@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-enum-comparison */
 import { Flags, Instruction } from "./instructions.js";
 //import MEMORY from "./memory/1_add.js";
-import MEMORY from "./memory/2_add_from_data";
-// import MEMORY from "./memory/03_sub_routine_no_stack";
+//import MEMORY from "./memory/2_add_from_data.js";
+import MEMORY from "./memory/3_sub_routine_no_stack";
 // import MEMORY from "./memory/04_sub_routine";
 // import MEMORY from "./memory/05_compiler";
 // import MEMORY from "./memory/06_fibonacci";
