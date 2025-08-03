@@ -6,6 +6,8 @@
   "author": "albibenni",
   "license": "ISC",
   "scripts": {
+    "build": "tsc",
+    "vm": "pnpm build && node ./dist/src/CPU.js",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
     "test": "vitest run",
