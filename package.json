@@ -7,6 +7,8 @@
   "license": "ISC",
   "scripts": {
     "build": "tsc",
+    "deopt": "pnpm build && pnpm dexnode --out ./profile/deopt.log --redirect-code-traces-to=./profile/deopt.ignore ./dist/src/deopt.js",
+    "deopt-fix": "pnpm build && pnpm dexnode --out ./profile/deopt-fix.log --redirect-code-traces-to=./profile/deopt-fix.ignore ./dist/src/deopt-fix.js",
     "vm": "pnpm build && node ./dist/src/CPU.js",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
@@ -23,6 +25,7 @@
     "@types/nunjucks": "^3.2.6",
     "@types/yargs": "^17.0.33",
     "@typescript-eslint/parser": "^8.38.0",
+    "dexnode": "1.2.1",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",

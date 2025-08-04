@@ -36,6 +36,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.38.0
         version: 8.38.0(eslint@9.32.0)(typescript@5.8.3)
+      dexnode:
+        specifier: 1.2.1
+        version: 1.2.1
       eslint:
         specifier: ^9.32.0
         version: 9.32.0
@@ -604,6 +607,10 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
+  dexnode@1.2.1:
+    resolution: {integrity: sha512-8VoKDr6qnPL9qu1fhJhJA+coQZ0F3eLtvPMJjCps1CQERrWI+/hKHAplASLI+TThsDrmQEqBUhlcUM63k2EpMw==}
+    hasBin: true
+
   dotenv@17.2.1:
     resolution: {integrity: sha512-kQhDYKZecqnM0fCnzI5eIv5L4cAe/iRI+HqMbO/hbRdTAeXDG+M9FjipUxNfbARuEg4iHIbhnhs78BCHNbSxEQ==}
     engines: {node: '>=12'}
@@ -1116,6 +1123,9 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
+  winreg@1.2.5:
+    resolution: {integrity: sha512-uf7tHf+tw0B1y+x+mKTLHkykBgK2KMs3g+KlzmyMbLvICSHQyB/xOFjTT8qZ3oeTFyU7Bbj4FzXitGG6jvKhYw==}
+
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
@@ -1580,6 +1590,11 @@ snapshots:
   deep-eql@5.0.2: {}
 
   deep-is@0.1.4: {}
+
+  dexnode@1.2.1:
+    dependencies:
+      semver: 7.7.2
+      winreg: 1.2.5
 
   dotenv@17.2.1: {}
 
@@ -2086,6 +2101,8 @@ snapshots:
     dependencies:
       siginfo: 2.0.0
       stackback: 0.0.2
+
+  winreg@1.2.5: {}
 
   word-wrap@1.2.5: {}
 
