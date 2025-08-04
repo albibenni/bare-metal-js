@@ -6,9 +6,9 @@ import { Flags, Instruction } from "./instructions.js";
 //import MEMORY from "./memory/1_add";
 //import MEMORY from "./memory/2_add_from_data";
 //import MEMORY from "./memory/3_sub_routine_no_stack";
-import MEMORY from "./memory/4_sub_routine";
-// import MEMORY from "./memory/5_compiler";
-// import MEMORY from "./memory/6_fibonacci";
+//import MEMORY from "./memory/4_sub_routine";
+//import MEMORY from "./memory/5_compiler";
+import MEMORY from "./memory/6_fibonacci";
 
 // REGISTERS
 
