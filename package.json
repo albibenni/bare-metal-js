@@ -11,6 +11,7 @@
     "deopt-fix": "pnpm build && pnpm dexnode --out ./profile/deopt-fix.log --redirect-code-traces-to=./profile/deopt-fix.ignore ./dist/src/deopt-fix.js",
     "inline-cache": "pnpm build && pnpm dexnode --out ./profile/inline-cache.log --redirect-code-traces-to=./profile/inline-cache.ignore ./dist/src/inline-cache.js",
     "equality": "pnpm build && pnpm dexnode --out ./profile/equality.log --redirect-code-traces-to=./profile/equality.ignore ./dist/src/equality.js",
+    "keys": "pnpm build && pnpm dexnode --out ./profile/keys.log --redirect-code-traces-to=./profile/keys.ignore ./dist/src/keys.js",
     "vm": "pnpm build && node ./dist/src/CPU.js",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
