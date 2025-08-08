@@ -12,6 +12,7 @@
     "inline-cache": "pnpm build && pnpm dexnode --out ./profile/inline-cache.log --redirect-code-traces-to=./profile/inline-cache.ignore ./dist/src/inline-cache.js",
     "equality": "pnpm build && pnpm dexnode --out ./profile/equality.log --redirect-code-traces-to=./profile/equality.ignore ./dist/src/equality.js",
     "keys": "pnpm build && pnpm dexnode --out ./profile/keys.log --redirect-code-traces-to=./profile/keys.ignore ./dist/src/keys.js",
+    "holey-arrays": "pnpm build && pnpm dexnode --out ./profile/holey-arrays.log --redirect-code-traces-to=./profile/holey-arrays.ignore ./dist/src/holey-arrays.js",
     "vm": "pnpm build && node ./dist/src/CPU.js",
     "indent:check": "prettier . --check",
     "indent:write": "prettier . --write",
